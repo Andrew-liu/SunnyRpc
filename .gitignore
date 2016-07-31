@@ -33,4 +33,4 @@
 *.app
 
 # Clion
-
+.idea/

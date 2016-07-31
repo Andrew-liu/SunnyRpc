@@ -20,10 +20,10 @@ namespace sunnyrpc {
         // init socket
         int init();
 
+    private:
         // set port reuse in TIME_WAIT
         void set_reuse_port();
 
-    private:
         // create socket
         void rpc_socket();
         // bind addr to socket

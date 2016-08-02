@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
+#include <fcntl.h>
+
 
 #define ERR_EXIT(m) \
     do { \
@@ -17,5 +19,11 @@
 
 typedef struct sockaddr SA;
 const int MAX_CONN = 5;
+const int BUF_SIZE = 1024;
+const int MAX_KQUEUE_NUM = 1024;
+
+
+void set_nonblock(int fd);
+
 
 #endif //SUNNYRPC_COMMONS_H

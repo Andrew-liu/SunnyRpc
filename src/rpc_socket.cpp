@@ -9,7 +9,7 @@
 #include <netinet/in.h>
 #include <netinet/ip.h>
 #include <cstring>
-#include "commons.h"
+#include "commons.cpp"
 
 namespace sunnyrpc{
     Socket::Socket(uint16_t port) :

@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.5)
 project(SunnyRpc)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -Werror -std=c++11")
-set(SOURCE_FILES src/main.cpp include/rpc_server.h include/rpc_method.h include/rpc_socket.h src/rpc_socket.cpp include/commons.h)
+set(SOURCE_FILES src/main.cpp include/rpc_server.h include/rpc_method.h include/rpc_socket.h src/rpc_socket.cpp include/commons.h src/rpc_server.cpp include/dispatcher.h src/dispatcher.cpp src/commons.cpp)
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 0)
 
